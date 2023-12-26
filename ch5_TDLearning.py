@@ -1,5 +1,5 @@
-from src.environment import GridWorld
-from src.agent import Agent
+from src.ch5.environment import GridWorld
+from src.ch5.agent import Agent
 
 def temporal_difference():
     env = GridWorld()
