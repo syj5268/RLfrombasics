@@ -4,6 +4,11 @@ def value_visualize(episode, data):
     plt.figure(figsize=(6, 6))
     plt.imshow(data, interpolation='nearest')
     plt.colorbar()
+
+    # 축 눈금을 1부터 4로 설정
+    plt.xticks(range(4), [0, 1, 2, 3])
+    plt.yticks(range(4), [0, 1, 2, 3])
+
     for i in range(4):
         for j in range(4):
             plt.text(j, i, '{:.2f}'.format(data[i][j]),
