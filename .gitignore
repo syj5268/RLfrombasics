@@ -1,3 +1,2 @@
-src/ch5/__pycache__
-src/ch6/__pycache__
-utils/__pycache__
+*.pyc
+__pycache__/
