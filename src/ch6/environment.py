@@ -1,6 +1,6 @@
 class GridWorld():
     def __init__(self):
-        self.x=0
+        self.x=2
         self.y=0
 
     def step(self,a):
@@ -59,6 +59,6 @@ class GridWorld():
             return False
         
     def reset(self):
-        self.x=0
+        self.x=2
         self.y=0
         return (self.x,self.y)

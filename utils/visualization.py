@@ -1,7 +1,6 @@
-import matplotlib.pyplot as plt
-
 # Value 시각화 함수 만들기
 def value_visualize(episode, data):
+    import matplotlib.pyplot as plt
     plt.figure(figsize=(6, 6))
     plt.imshow(data, interpolation='nearest')
     plt.colorbar()
@@ -19,15 +18,19 @@ def value_visualize(episode, data):
 
 # policy 시각화 함수 만들기
 def action_visualize(episode, data):
+    import matplotlib.pyplot as plt
     plt.imshow(data, interpolation='nearest', cmap=plt.get_cmap('Paired'))
     plt.xticks(range(7), [0, 1, 2, 3, 4, 5, 6])
-    plt.yticks(range(5), [4, 3, 2, 1, 0])
-    
-    d_symbols = ['←','↑', '→', '↓']
-    for i in range(4, -1, -1):
+    plt.yticks(range(5), [0, 1, 2, 3, 4])
+
+    d_symbols = ['←','↑', '→', '↓', '']
+    for i in range(5):
         for j in range(7):
-            direction = int(data[i,j])
-            direction = d_symbols[direction]
+            if (j, i) in [(2, 0), (2, 1), (2, 2), (4, 2), (4, 3), (4, 4)]:
+                direction = d_symbols[-1]
+            else:
+                direction = int(data[i,j])
+                direction = d_symbols[direction]
             plt.text(j, i, direction, ha="center", va="center", color="black", fontsize=20)
     plt.title(f"Episode: {episode + 1}")
     plt.show()
