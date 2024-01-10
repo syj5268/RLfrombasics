@@ -38,7 +38,7 @@ def plot_results(model):
     plt.show()
 
 def main():
-    data_x = np.random.rand(1000) * 5
+    data_x = np.random.rand(10000) * 5
     model = Model()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
