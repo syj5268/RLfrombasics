@@ -6,8 +6,8 @@
 
 ## ch6. Model-free Control
 * `ch6_MCControl.py` : monte-carlo control
-* `ch6_SARSA.py` : time-difference control - SARSA
-* `ch6_QLearning.py` : time-difference control - QLearning
+* `ch6_SARSA.py` : on-policy TD control - SARSA 
+* `ch6_QLearning.py` : off-policy TD control - QLearning 
 
 ## ch7. Deep RL
 * `ch7_CosineFitting.py` : Neural Network 기초
