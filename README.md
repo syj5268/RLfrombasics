@@ -14,11 +14,11 @@
 
 ## ch8. Value-based Agent
 * `ch8_replaybuffer.py` : replaybuffer technique
-* `ch8_DQN.py` : Deep Q-Learning
+* `ch8_DQN.py` : Deep Q-Learning (Value network)
 * `ch8_DQN_main.py` : 메인 함수 (600번의 에피소드)
 
 ## ch9. Policy-based Agent
-* `ch9_REINFORCE.py` : REINFORCE algorithm
+* `ch9_REINFORCE.py` : REINFORCE algorithm (Policy network)
 * `ch9_REINFORCE_main.py` : 메인 함수 (2000번의 에피소드)
-* `ch9_ActorCritic.py` : TD ActorCritic
+* `ch9_ActorCritic.py` : TD ActorCritic (Value + Policy network)
 * `ch9_ActorCritic_main.py` : 메인 함수 (1000번의 에피소드)
